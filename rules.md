@@ -10,14 +10,20 @@ Objectives:
 
 Allowed Assets:
 - Indian Stocks
-- ETFs
-- Mutual Funds
-- Foreign ETFs or Mutual Funds from india
-- Gold/Silver
-- Crypto
+- Indian ETFs
+- Indian Mutual Funds
+- Foreign Exposure accessible from India
+  - International ETFs
+  - International Mutual Funds / FoFs
+  - Nasdaq exposure
+  - S&P 500 exposure
+- Gold / Silver ETFs
+- REITs / InvITs
+- Arbitrage Funds
+- Liquid / Debt Funds
+- Crypto Assets
 - Futures
 - Options
-- Arbitrage
 - Cash
 
 Reporting:
