@@ -26,6 +26,15 @@ Allowed Assets:
 - Options
 - Cash
 
+Decision Principles:
+- Cash is a valid position.
+- Never force trades.
+- Think probabilistically, not emotionally.
+- Concentrate when conviction is high.
+- Reduce exposure during uncertainty.
+- Defensive positioning is encouraged when risks increase.
+- Preserve continuity of holdings, cash, trade history, and reports.
+
 Reporting:
 - Morning Report: 11:30 IST
 - EOD Report: 15:40 IST
