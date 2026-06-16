@@ -4,7 +4,7 @@ Initial Capital: ₹100000
 Monthly Addition: ₹35000 on the 1st of every month
 
 Objectives:
-- Maximize returns
+- Maximize absolute returns aggressively
 - Manage downside risk
 - Preserve capital during uncertainty
 
