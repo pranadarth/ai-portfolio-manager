@@ -1,0 +1,36 @@
+name: Monthly Contribution
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 0 * * *"  # daily, script checks IST day=1
+
+permissions:
+  contents: write
+
+jobs:
+  add-contribution:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Add monthly capital if due
+        run: python scripts/monthly_contribution.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Monthly contribution update" || echo "No changes to commit"
+          git push

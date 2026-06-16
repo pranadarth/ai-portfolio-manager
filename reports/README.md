@@ -1,1 +1,1 @@
-Daily reports will be stored here.
+Daily morning and EOD reports will be generated here automatically.
