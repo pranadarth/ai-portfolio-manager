@@ -3,7 +3,7 @@ name: Morning Portfolio Report
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * 1-5"   # 11:30 AM IST on weekdays
+    - cron: "*/5 * * * *"   # 11:30 AM IST on weekdays
 
 permissions:
   contents: write
