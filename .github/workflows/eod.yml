@@ -28,7 +28,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate EOD report
-        run: python scripts/generate_report.py --session eod
+        run: python -m scripts.generate_report --session eod
 
       - name: Commit changes
         run: |

@@ -3,7 +3,7 @@ name: Morning Portfolio Report
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"   # 11:30 AM IST on weekdays
+     - cron: "0 6 * * 1-5"   # 11:30 AM IST on weekdays
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate morning report
-        run: python scripts/generate_report.py --session morning
+        run: python -m scripts.generate_report --session morning
 
       - name: Commit changes
         run: |

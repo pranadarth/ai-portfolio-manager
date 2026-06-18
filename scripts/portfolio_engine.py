@@ -7,7 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from fetch_prices import fetch_price_for_holding
+from scripts.fetch_prices import fetch_price_for_holding
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
